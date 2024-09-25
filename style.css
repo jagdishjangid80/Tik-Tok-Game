@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Baloo Da 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.tic_toe{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    gap: 0; /* Ensure there's no gap between the cells */
+}
+
+.cell{
+    border: 2px solid black;
+    font-size: 8vw; /* Use vw for font size to scale with viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gameInfo{
+    padding: 20px 34px;
+    text-align: center;
+}
+.cell:hover{
+    background-color: aliceblue ;
+}
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+button{
+    margin-left: 60px;
+}
